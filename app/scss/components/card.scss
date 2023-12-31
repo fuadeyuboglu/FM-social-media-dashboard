@@ -55,6 +55,7 @@
         border-top: rem(4) solid var(--youtube);
     }
 
+
     &__platform {
         display: flex;
         justify-content: center;
@@ -62,6 +63,14 @@
         height: rem(20);
         margin-top: rem(5);
         margin-bottom: rem(28);
+    }
+
+    &__subtitle {
+        color: var(--dark-text1);
+        font-size: rem(14);
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
     }
 
     &__icon {
@@ -109,7 +118,7 @@
         }
 
         &--small {
-
+            font-size: rem(32);
         }
     }
 
