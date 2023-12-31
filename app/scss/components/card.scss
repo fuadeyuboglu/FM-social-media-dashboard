@@ -3,9 +3,13 @@
 .card {
     background: var(--dark-card);
     color: var(--dark-text1);
+    width: rem(255); //temp
+    text-align: center;
+    padding: rem(25);
+    border-radius: rem(5);
 
     &--facebook {
-
+        border-top: rem(4) solid var(--facebook);
     }
 
     &--twitter {
@@ -21,10 +25,14 @@
     }
 
     &__platform {
-
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: rem(28);
     }
 
     &__icon {
+        margin-right: rem(8);
 
         &--facebook {
 
@@ -44,13 +52,27 @@
     }
 
     &__username {
+        color: var(--dark-text1);
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
 
+    &__followers {
+        margin-bottom: rem(25);
     }
 
     &__count {
+        color: var(--light-bg);
+        font-style: normal;
+        font-weight: 700;
+        line-height: rem(48);
+        letter-spacing: rem(-2);
+        margin-bottom: rem(9);
 
         &--big {
-
+            font-size: rem(56);
         }
 
         &--small {
@@ -59,17 +81,38 @@
     }
 
     &__label {
-
+        color: var(--dark-text1);
+        font-size: rem(12);
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: rem(5);
+        text-transform: uppercase;
     }
 
     &__change {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: rem(12);
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
 
         &--up {
-
+            color: var(--limegreen);
         }
 
         &--down {
-
+            color: var(--brightred);
         }
+
+        img {
+            margin-right: rem(4);
+        }
+    }
+
+    &__number {
+        
     }
 }
