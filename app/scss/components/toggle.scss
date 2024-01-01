@@ -9,7 +9,9 @@
 
     label {
         font-size: rem(14);
-
+        font-weight: 700;
+        color: var(--toggle);
+        
         &[for="dark"] {
             line-height: rem(24);
             margin-right: rem(13);
@@ -43,7 +45,7 @@
         width: 100%;
         border-radius: rem(12);
         overflow: hidden;
-        background: linear-gradient(225deg, var(--toggle-bg-end) 0%, var(--toggle-bg-start) 98.02%);
+        background: var(--toggle-bg);
         pointer-events: none;
     }
 
@@ -55,8 +57,7 @@
         width: rem(18);
         height: rem(18);
         border-radius: 50%;
-        background-color: var(--toggle);
-        background-color: var(--dark-bg);
+        background-color: var(--toggle-button);
         transition: all 150ms ease-in-out;
     }
 
